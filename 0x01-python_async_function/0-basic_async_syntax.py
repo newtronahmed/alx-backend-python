@@ -2,7 +2,6 @@
 """ Task 0 module"""
 import random
 import asyncio
-from typing import float
 
 async def wait_random(max_delay=10) -> float:
    """waits for a random delay between 0 and max_delay""" 
