@@ -2,9 +2,10 @@
 """ Task 0 module"""
 import random
 import asyncio
+from typing import Float
 
-async def wait_random(max_delay=10):
-    
-    rand = random.random() * max_delay
+async def wait_random(max_delay=10) -> Float:
+   """waits for a random delay between 0 and max_delay""" 
+    rand = random.uniform(0, max_delay)
     await asyncio.sleep(rand)
     return rand 
